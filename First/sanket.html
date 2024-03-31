@@ -25,7 +25,7 @@
             color: #56c6f2;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: s-letter-animation 5s linear 0s;
+            animation: s-letter-animation 5s linear;
         }
 
         #a {
@@ -39,27 +39,28 @@
             color: #60f42e;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: n-letter-animation 1.5s ease-out 0s;
+            animation: n-letter-animation 1.5s ease-out;
         }
 
         #k {
             color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: k-letter-animation 1.5s ease-out 0s;
+            animation: k-letter-animation 1.5s ease-out;
         }
 
         #e {
             color: #e2f13c;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: e-letter-animation 1s linear 0.5s infinite;
+            animation: e-letter-animation 1s linear 0s infinite;
         }
 
         #t {
             color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
+            animation: t-letter-animation 1.4s linear 0.5s 4 alternate-reverse;
         }
 
         @keyframes s-letter-animation {
@@ -127,6 +128,17 @@
 
             100% {
                 transform: rotate(360deg);
+            }
+        }
+
+        @keyframes t-letter-animation {
+            from {
+                color: black;
+                text-shadow: -2px -2px 0 #fffce1, 2px -2px 0 #fffce1, -2px 2px 0 #fffce1, 2px 2px 0 #fffce1;
+            }
+
+            to {
+                color: #fffce1;
             }
         }
     </style>
