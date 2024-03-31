@@ -25,7 +25,7 @@
             color: #56c6f2;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: s-letter-animation 5s linear;
+            animation: s-letter-animation 6s linear;
         }
 
         #a {
@@ -39,14 +39,14 @@
             color: #60f42e;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: n-letter-animation 1.5s ease-out;
+            animation: n-letter-animation 2.5s ease-out;
         }
 
         #k {
             color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: k-letter-animation 1.5s ease-out;
+            animation: k-letter-animation 2.5s ease-out;
         }
 
         #e {
@@ -60,7 +60,7 @@
             color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: t-letter-animation 1.4s linear 0.5s 4 alternate-reverse;
+            animation: t-letter-animation 1.4s linear 0s 4 alternate-reverse;
         }
 
         @keyframes s-letter-animation {
@@ -71,7 +71,7 @@
 
             25% {
                 color: rgb(146, 215, 242);
-                transform: rotate(0) scale(1.8, 1.8);
+                transform: rotate(30deg) scale(1.8, 1.8);
             }
 
             50% {
@@ -85,7 +85,7 @@
 
         @keyframes a-letter-animation {
             0% {
-                transform: rotateX(0deg);
+                transform: rotateX(0);
             }
 
             100% {
@@ -95,7 +95,7 @@
 
         @keyframes n-letter-animation {
             0% {
-                transform: translateY(-40vh) rotate(50deg);
+                transform: translateY(-40vh) rotate(50deg) scale(1.8, 1.8);
             }
 
             70% {
@@ -109,7 +109,7 @@
 
         @keyframes k-letter-animation {
             0% {
-                transform: translateY(40vh) rotate(50deg);
+                transform: translateY(40vh) rotate(50deg) scale(1.8, 1.8);
             }
 
             70% {
@@ -123,7 +123,7 @@
 
         @keyframes e-letter-animation {
             0% {
-                transform: rotate(0deg);
+                transform: rotate(0);
             }
 
             100% {
