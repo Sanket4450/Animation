@@ -6,55 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanket Animation</title>
     <style>
+        ::selection {
+            background-color: black;
+        }
+
         body {
             margin: 0;
             height: 100vh;
             background-color: black;
         }
-    
+
         .container {
             display: flex;
             justify-content: center;
         }
-    
+
         #s {
-            color: rgb(86, 198, 242);
+            color: #56c6f2;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: s-letter-animation 4s ease-out 0s;
+            animation: s-letter-animation 5s ease-in-out 0s;
         }
-    
+
         #a {
-            color: white;
+            color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: a-letter-animation 0.8s linear 0s 3 alternate;
+            animation: a-letter-animation 0.8s linear 0s 5 alternate;
         }
-    
+
         #n {
-            color: rgb(96, 244, 46);
+            color: #60f42e;
             font-size: 14vw;
             padding: 0 1vw;
         }
-    
+
         #k {
-            color: white;
+            color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
         }
-    
+
         #e {
-            color: rgb(226, 241, 60);
+            color: #e2f13c;
             font-size: 14vw;
             padding: 0 1vw;
+            animation: e-letter-animation 1s linear 0.5s infinite;
         }
-    
+
         #t {
-            color: white;
+            color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
         }
-    
+
         @keyframes s-letter-animation {
             0% {
                 color: white;
@@ -78,6 +83,16 @@
 
             100% {
                 transform: rotateX(360deg);
+            }
+        }
+
+        @keyframes e-letter-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
             }
         }
     </style>
