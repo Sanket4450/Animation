@@ -5,19 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sanket Animation</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: black;
+        }
+    
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #s {
+            color: rgb(86, 198, 242);
+            font-size: 14vw;
+            padding: 0 1vw;
+            animation: s-letter-animation 3s ease-out 0s;
+        }
+    
+        #a {
+            color: white;
+            font-size: 14vw;
+            padding: 0 1vw;
+        }
+    
+        #n {
+            color: rgb(96, 244, 46);
+            font-size: 14vw;
+            padding: 0 1vw;
+        }
+    
+        #k {
+            color: white;
+            font-size: 14vw;
+            padding: 0 1vw;
+        }
+    
+        #e {
+            color: rgb(226, 241, 60);
+            font-size: 14vw;
+            padding: 0 1vw;
+        }
+    
+        #t {
+            color: white;
+            font-size: 14vw;
+            padding: 0 1vw;
+        }
+    
+        @keyframes s-letter-animation {
+            0% {
+                color: white;
+                transform: translateX(-20vw) rotate(180deg);
+            }
+    
+            25% {
+                color: rgb(146, 215, 242);
+                transform: rotate(0);
+            }
+    
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
 </head>
 
-<body style="height: 100vh; background-color: black;">
-
-    <div style="display: flex; justify-content: center;">
-        <h1 style="color: rgb(95, 197, 237);">S</h1>
-        <h1 style="color: white;">A</h1>
-        <h1 style="color: white;">N</h1>
-        <h1 style="color: white;">K</h1>
-        <h1 style="color: white;">E</h1>
-        <h1 style="color: white;">T</h1>
+<body>
+    <div class="container">
+        <h1 id="s">S</h1>
+        <h1 id="a">&Atilde;</h1>
+        <h1 id="n">N</h1>
+        <h1 id="k">K</h1>
+        <h1 id="e">&#163;</h1>
+        <h1 id="t">T</h1>
     </div>
-
 </body>
 
 </html>
