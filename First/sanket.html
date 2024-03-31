@@ -25,7 +25,7 @@
             color: #56c6f2;
             font-size: 14vw;
             padding: 0 1vw;
-            animation: s-letter-animation 5s ease-in-out 0s;
+            animation: s-letter-animation 5s linear 0s;
         }
 
         #a {
@@ -46,6 +46,7 @@
             color: #fffce1;
             font-size: 14vw;
             padding: 0 1vw;
+            animation: k-letter-animation 1.5s ease-out 0s;
         }
 
         #e {
@@ -64,12 +65,16 @@
         @keyframes s-letter-animation {
             0% {
                 color: white;
-                transform: translateX(-20vw) rotate(180deg);
+                transform: translateX(-30vw) rotate(150deg);
             }
 
             25% {
                 color: rgb(146, 215, 242);
-                transform: rotate(0);
+                transform: rotate(0) scale(1.8, 1.8);
+            }
+
+            50% {
+                transform: scale(1, 1);
             }
 
             100% {
@@ -93,7 +98,21 @@
             }
 
             70% {
-                transform: translateY(10vh);
+                transform: translateY(5vh);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes k-letter-animation {
+            0% {
+                transform: translateY(40vh) rotate(50deg);
+            }
+
+            70% {
+                transform: translateY(-5vh);
             }
 
             100% {
