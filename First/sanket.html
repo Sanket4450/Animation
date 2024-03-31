@@ -39,6 +39,7 @@
             color: #60f42e;
             font-size: 14vw;
             padding: 0 1vw;
+            animation: n-letter-animation 1.5s ease-out 0s;
         }
 
         #k {
@@ -83,6 +84,20 @@
 
             100% {
                 transform: rotateX(360deg);
+            }
+        }
+
+        @keyframes n-letter-animation {
+            0% {
+                transform: translateY(-40vh) rotate(50deg);
+            }
+
+            70% {
+                transform: translateY(10vh);
+            }
+
+            100% {
+                transform: translateY(0);
             }
         }
 
