@@ -21,13 +21,14 @@
             color: rgb(86, 198, 242);
             font-size: 14vw;
             padding: 0 1vw;
-            animation: s-letter-animation 3s ease-out 0s;
+            animation: s-letter-animation 4s ease-out 0s;
         }
     
         #a {
             color: white;
             font-size: 14vw;
             padding: 0 1vw;
+            animation: a-letter-animation 0.8s linear 0s 3 alternate;
         }
     
         #n {
@@ -59,14 +60,24 @@
                 color: white;
                 transform: translateX(-20vw) rotate(180deg);
             }
-    
+
             25% {
                 color: rgb(146, 215, 242);
                 transform: rotate(0);
             }
-    
+
             100% {
                 transform: translateX(0);
+            }
+        }
+
+        @keyframes a-letter-animation {
+            0% {
+                transform: rotateX(0deg);
+            }
+
+            100% {
+                transform: rotateX(360deg);
             }
         }
     </style>
