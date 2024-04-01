@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(6, 153, 6);
+    border-radius: 80px;
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(227, 7, 7);
+    border-radius: 80px;
+}
